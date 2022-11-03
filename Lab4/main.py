@@ -14,3 +14,7 @@ if __name__ == '__main__':
     print_hi('PyCharm')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
+'''L = ['Bob', 40.0, ['dev', 'mgr']]
+for i in range(0,(len(L)-1)):
+    print(L[i], end=' ')'''
