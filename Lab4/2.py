@@ -12,6 +12,7 @@ import random
 zestaw_1=[]
 x=1
 ilosc1 = int(input("podaj liczbę elementów: "))
+#for i in range(n):
 while x<=ilosc1:
     zestaw_1.append(random.randint(1,10))
     x+=1
