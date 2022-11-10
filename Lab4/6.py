@@ -10,7 +10,7 @@ X[-3:]=[]
 #del X[-3:]
 print(X)
 
-Y=X[:]
+Y=X[:] #kopiowanie listy X
 Y[4]=12
 print(X)
 print(Y)
