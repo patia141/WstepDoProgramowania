@@ -3,8 +3,18 @@ Następnie zmodyfikuj funkcję tak, aby znajdowała i zwracała wartość maksym
 Wskazówka: użyj parametru *args, który łączy wszystkie dodatkowe (nadmiarowe) argumenty
 pozycyjne, niebędące słowami kluczowymi podczas wywoływania funkcji, w krotkę.'''
 
-def funkcja (arg1, arg2, *arg3):
-    #print(arg1, arg2, *arg3)
-    max()
+def zad3(*args):
+    print(args)
+    for i in args:
+        print(i)
 
-funkcja(2,3,4)
+def zad3max(*args):
+    print(*args)
+    m=args[0]
+    for x in args[1:]:
+        if x > m:
+            m=x
+    return m
+
+#zad3(1,1.5,False,[2,3])
+print(zad3max(1,33,6,22))
