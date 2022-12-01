@@ -7,10 +7,17 @@ Uwaga: Parametry z wartościami domyślnymi powinny być definiowane jako ostatn
 parametrów, ponieważ Python dopasowuje argumenty do parametrów na podstawie ich pozycji:
 def fun(param1, param2=default2, param3=default3)'''
 
-def zad1(imie, wiek):
-    '''funkcjaaaaaa cos robi'''     #nie mozna uzywac '#'
+def zad1(imie, wiek=20): #wart domyślna w nagłówku
+    '''funkcjaaaaaa cos robi
+    
+    :param imie:
+    :param wiek:
+    :return:
+    
+    '''     #nie mozna uzywac '#'
     print(imie, wiek)
 
-zad1("Patrycja",22)
+zad1("Patrycja")
 zad1(wiek=23, imie="Karolina")
 print(zad1.__doc__)
+#print(help(zad1)) #none na koncu bo funkcja nic nie zwraca
