@@ -6,3 +6,7 @@ podczas wywoływania funkcji, w słownik. Argument przekazany przez słowo klucz
 nadmiarowy, jeśli słowo kluczowe, przez które zostało przekazane, nie pasuje do żadnej z nazw
 parametrów w definicji funkcji. '''
 
+def zad4(**kwargs):
+    print(**kwargs)
+
+zad4

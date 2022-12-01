@@ -8,13 +8,14 @@ def zad3(*args):
     for i in args:
         print(i)
 
-def zad3max(*args):
+def zad3max(liczba1, *args):
     print(*args)
-    m=args[0]
-    for x in args[1:]:
+    m = liczba1
+    for x in args:
         if x > m:
-            m=x
+            m = x
     return m
 
 #zad3(1,1.5,False,[2,3])
 print(zad3max(1,33,6,22))
+#print(zad3max())
